@@ -15,14 +15,14 @@
         color2: '#2ce8d6',
         blocks: [
           {
-            opcode: 'alert',
+            opcode: 'command',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'Alert [STR]',
+            text: 'Command [STR]',
             disableMonitor: true,
             arguments: {
-              STR: {
+               STR: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: "Hello, world!"
+                defaultValue: "/help"
               },
             }
           },
@@ -90,8 +90,20 @@
         ],
       };
     }
-    alert(args) {
-      alert(args.STR)
+    command(args) {
+    let q = args.STR
+      console.log(q)
+      if (q == "/help") {
+        console.log(">help")
+        console.log("/alert")
+        console.log("/getvar")
+        }else if (q == "/alert") {
+        alert(true)
+        }else if (q == "/getvar") {
+        console.log(true)
+        }else{
+      console.error("no command in library that shows "+q)
+        }
     }
     mobile(args) {
       return navigator.userAgentData.mobile;
