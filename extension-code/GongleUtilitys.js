@@ -26,12 +26,21 @@
               },
             }
           },
+          {
+            opcode: 'mobile',
+            blockType: Scratch.BlockType.REPORTER,
+            text: 'On moblie device?',
+            disableMonitor: true,
+          },
             
         ],
       };
     }
     alert(args) {
       alert(args.STR)
+    }
+    mobile(args) {
+      return navigator.userAgentData.mobile;
     }
 
   }
