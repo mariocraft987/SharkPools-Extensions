@@ -329,6 +329,13 @@
       "status": "update",
       "date": "Last Updated: 02/24/2024"
     },
+    "GongleUtilitys": {
+      "credits": "Extra blocks to help make your project more unlimited. by Mariocraft987",
+      "url": "https://raw.githubusercontent.com/SharkPool-SP/SharkPools-Extensions/main/extension-code/GongleUtilitys.js",
+      "tags": ".all.utilities",
+      "status": "",
+      "date": "Released: 02/28/2024"
+    },
     "Example": {
       "credits": "",
       "url": "",
